@@ -6,8 +6,8 @@ object beverages {
      // Create database
     //test.sql("create database proj1").show()
 
-    //test.sql("show databases").show()
-    //test.sql("use proj1").show()
+    test.sql("show databases").show()
+    test.sql("use proj1").show()
     // test.sql("create table cb1 (coff string, branch string) row format delimited fields terminated by ',' stored as textfile")
     //test.sql("load data local inpath 'dataset1/allbranch.txt' overwrite into table cb1")
     // test.sql("create table cb2 (coff2 string, customer int) row format delimited fields terminated by ',' stored as textfile").show()
@@ -70,7 +70,7 @@ object beverages {
     //test.sql("insert overwrite table row_deleted select coff, total from (select *,  row_number () over () as row_num from row_deleted)as numbered_rows where row_num!=19")
     //*****
     //test.sql("select * from row_delete")
-    test.sql("var  rdd1 = {sc.parallelize(Array('jan','feb'))}")
+
   }
 
 }
